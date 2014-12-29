@@ -1,6 +1,6 @@
 <?php
 
 Route::get('/', function(){
-  $users = User::all(); // 2
+  $users = User::find(1); // 4
   return $users;
 });
