@@ -8,9 +8,14 @@ Route::get('/', function(){
   $user->save(); // 8
   */
   
+  /*
   User::create([
       'username' => 'Nadya',
       'password' => Hash::make('nadya')
   ]);
+  */
+  $user = User::find(5);
+  $user->username = 'Nadia';
+  $user->save(); // 8
   return User::all();
 });
