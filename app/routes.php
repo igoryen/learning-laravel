@@ -1,6 +1,6 @@
 <?php
 
 Route::get('/', function(){
-  $users = DB::table('users')->where('username', '!=', 'igoryen')->get(); // 6
+  $users = User::where('username', '!=', 'igoryen')->get(); // 6
   return $users;
 });
