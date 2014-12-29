@@ -6,6 +6,6 @@
   
   <body>
     <h1>All Users</h1>
-    {{ dd($users) }}
+    {{ dd($users->toArray()) }}
   </body>
 </html>
