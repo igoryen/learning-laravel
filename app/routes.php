@@ -14,8 +14,15 @@ Route::get('/', function(){
       'password' => Hash::make('nadya')
   ]);
   */
+  
+  /*
   $user = User::find(5);
   $user->username = 'Nadia';
   $user->save(); // 8
+  */
+  
+  $user = User::find(5);
+  $user -> delete();
+  
   return User::all();
 });
