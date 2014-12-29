@@ -4,7 +4,7 @@
 
   <body>
     <h1>
-      Hello <?= $name; ?>
+      Hello {{ $name }}!
     </h1>
   </body>
 </html>
