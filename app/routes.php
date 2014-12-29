@@ -11,8 +11,4 @@
 |
 */
 
-Route::get('/', function()
-{
-  $name = 'Igor';
-  return View::make('hello2')->with('name', $name);
-});
+Route::get('/', 'PagesController@home'); // 1

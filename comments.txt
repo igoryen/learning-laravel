@@ -1,0 +1,1 @@
+1. When GET-request for '/', run the 'home()' method on the Pages controller
