@@ -21,8 +21,10 @@ Route::get('/', function(){
   $user->save(); // 8
   */
   
+  /*
   $user = User::find(5);
   $user -> delete();
+  */
   
-  return User::all();
+  return User::orderBy('username', 'asc')->get(); // 11
 });

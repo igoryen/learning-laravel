@@ -9,3 +9,4 @@
 9. to override the exception if your table doesn't have the created_at column
 10. These columns can be mass-assigned, i.e. 
   you can use an array to populate these columns in the table
+11. SELECT * FROM users ORDER BY username ASC
