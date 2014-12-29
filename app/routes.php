@@ -14,5 +14,5 @@
 Route::get('/', function()
 {
   $name = 'Igor';
-	return View::make('hello2')->with('name', $name);
+  return View::make('hello2')->with('name', $name);
 });
