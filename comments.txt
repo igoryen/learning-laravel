@@ -6,3 +6,4 @@
 6. SELECT * FROM users WHERE username != 'igoryen'
 7. encrypt the string
 8. save the object to the database
+9. to override the exception if your table doesn't have the created_at column
