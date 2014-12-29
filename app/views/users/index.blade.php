@@ -6,5 +6,6 @@
   
   <body>
     <h1>All Users</h1>
+    {{ dd($users) }}
   </body>
 </html>
