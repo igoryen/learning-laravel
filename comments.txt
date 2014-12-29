@@ -10,3 +10,5 @@
 10. These columns can be mass-assigned, i.e. 
   you can use an array to populate these columns in the table
 11. SELECT * FROM users ORDER BY username ASC
+12. in the /users/ folder, in the index.php file
+13. "users.index" means the same as "users/index.php"

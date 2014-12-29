@@ -28,3 +28,12 @@ Route::get('/', function(){
   
   return User::orderBy('username', 'asc')->get(); // 11
 });
+
+Route::get('users', function(){
+  $users = User::all();
+  // The 3 ways to return
+  //return View::make('users/index')->with('users', $users); // 12
+  //return View::make('users/index')->withUsers($users);
+  //return View::make('users/index', ['users' => $users]);
+  return View::make('users.index', ['users' => $users]); // 13
+});
