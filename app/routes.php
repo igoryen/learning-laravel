@@ -1,6 +1,10 @@
 <?php
 
 Route::get('/', function(){
-  $users = User::find(1); // 4
-  return $users;
+  $user = new User();
+  $user->username = 'Jenica';
+  $user->password = Hash::make('jenica'); // 7
+  $user->save(); // 8
+  
+  return User::all();
 });
