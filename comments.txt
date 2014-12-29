@@ -1,1 +1,4 @@
 1. When GET-request for '/', run the 'home()' method on the Pages controller
+2. SELECT * FROM users
+3. SELECT * FROM users WHERE user_id = 1
+4. SELECT username FROM users WHERE user_id = 1

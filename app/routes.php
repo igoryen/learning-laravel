@@ -14,3 +14,9 @@
 Route::get('/', 'PagesController@home'); // 1
 
 Route::get('/about', 'PagesController@about');
+
+Route::get('users', function(){
+  $users = User::all(); // 2
+  $user = User::find(1); // 3
+  return $user->username; // 4
+});
