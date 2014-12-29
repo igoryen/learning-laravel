@@ -3,3 +3,4 @@
 3. SELECT * FROM users WHERE user_id = 1
 4. SELECT username FROM users WHERE user_id = 1
 5. die(var_dump($user));
+6. SELECT * FROM users WHERE username != 'igoryen'
