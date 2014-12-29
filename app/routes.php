@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'PagesController@home'); // 1
+
+Route::get('/about', 'PagesController@about');
