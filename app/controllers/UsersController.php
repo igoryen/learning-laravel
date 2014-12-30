@@ -16,10 +16,7 @@ class UsersController extends \BaseController {
   }
   
   public function store(){
-    $validation = Validator::make(Input::all(), [
-        'username' => 'required',
-        'password' => 'required' 
-    ]);
+    $validation = Validator::make(Input::all(), User::$val_rules);
     if($validation->fails()){
       return Redirect::back()->withInput()->withErrors($validation->messages());
     }
