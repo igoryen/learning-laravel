@@ -2,6 +2,8 @@
 
 Route::get('users', 'UsersController@index');
 
+Route::get('users/{username}', 
+        'UsersController@show');
 
 Route::get('/', function(){
   /*
@@ -43,7 +45,9 @@ Route::get('users', function(){
 });
 */
 
+/*
 Route::get('users/{username}', function($username){
   $user = User::whereUsername($username)->first(); // 14
   return View::make('users.show', ['user' => $user]);
 });
+*/
