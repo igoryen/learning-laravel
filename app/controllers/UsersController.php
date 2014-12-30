@@ -15,4 +15,8 @@ class UsersController extends \BaseController {
     return View::make('users.create');
   }
   
+  public function store(){
+    return 'create the new user, given the POSTed data';
+  }
+  
 }
