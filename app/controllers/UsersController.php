@@ -12,7 +12,7 @@ class UsersController extends \BaseController {
   }
   
   public function create(){
-    return 'Show form to create a user';
+    return View::make('users.create');
   }
   
 }
