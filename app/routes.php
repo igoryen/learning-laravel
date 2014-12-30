@@ -32,6 +32,7 @@ Route::get('/', function(){
   return User::orderBy('username', 'asc')->get(); // 11
 });
 
+/*
 Route::get('users', function(){
   $users = User::all();
   // The 3 ways to return
@@ -40,6 +41,7 @@ Route::get('users', function(){
   //return View::make('users/index', ['users' => $users]);
   return View::make('users.index', ['users' => $users]); // 13
 });
+*/
 
 Route::get('users/{username}', function($username){
   $user = User::whereUsername($username)->first(); // 14
