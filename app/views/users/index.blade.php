@@ -6,6 +6,10 @@
   
   <body>
     <h1>All Users</h1>
-    {{ dd($users->toArray()) }}
+    @foreach($users as $user)
+      <li>{{ $user->$username }}</li>
+    @endforeach
+    
+     
   </body>
 </html>
