@@ -16,7 +16,13 @@ class UsersController extends \BaseController {
   }
   
   public function store(){
-    return 'create the new user, given the POSTed data';
+    $user = new User;
+    $user->username = Input::get('username');
+    $user->password = Hash::make(Input::get('password'));
+    $user->save();
+    
+    //return Redirect::to('/users');
+    return Redirect::route('users.index');
   }
   
 }
