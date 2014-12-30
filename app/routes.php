@@ -37,3 +37,8 @@ Route::get('users', function(){
   //return View::make('users/index', ['users' => $users]);
   return View::make('users.index', ['users' => $users]); // 13
 });
+
+Route::get('users/{username}', function($username){
+  $user = User::whereUsername($username)->first(); // 14
+  return View::make('users.show', ['user' => $user]);
+});
