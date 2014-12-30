@@ -13,3 +13,14 @@
 12. in the /users/ folder, in the index.php file
 13. "users.index" means the same as "users/index.php"
 14. SELECT * FROM users WHERE username = username LIMIT 1
+15. gives you the necessary routes for a RESTful style of development.
+  To check all the routes that this gives you, do: 
+  Terminal -> php artisan routes
+16. Use the correct method names in the controller! 
+    index()   sql SELECT  http GET
+    create()  sql INSERT  http GET
+    store()   sql save    http POST 
+    show()    sql SELECT  http GET 
+    edit()    sql UPDATE  http GET 
+    update()  sql UPDATE  http PATCH
+    destroy() sql DELETE  http DELETE
