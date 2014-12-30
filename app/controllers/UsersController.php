@@ -16,7 +16,10 @@ class UsersController extends \BaseController {
   }
   
   public function store(){
-    $validation = Validator::make(Input::all(), User::$val_rules);
+    if(! User::isValid(Input::all())){
+      return Redirect::back()->withInput()->withErrors(User::$err_messages);
+    }
+    //$validation = Validator::make(Input::all(), User::$val_rules);
     if($validation->fails()){
       return Redirect::back()->withInput()->withErrors($validation->messages());
     }
