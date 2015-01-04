@@ -24,3 +24,6 @@
     edit()    sql UPDATE  http GET 
     update()  sql UPDATE  http PATCH
     destroy() sql DELETE  http DELETE
+17. The constructor for the UseresController. For the UsersController 
+  to function properly, we need a User class object
+18. Injecting the User class object through the __constructor of UsersController
