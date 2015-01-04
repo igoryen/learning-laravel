@@ -7,7 +7,8 @@
 7. encrypt the string
 8. save the object to the database
 9. to override the exception if your table doesn't have the created_at column
-10. These columns can be mass-assigned, i.e. 
+10. A way to protect ourselves against mass assignment vulnerabilities.
+  These columns are the only ones that can be mass-assigned, i.e. 
   you can use an array to populate these columns in the table
 11. SELECT * FROM users ORDER BY username ASC
 12. in the /users/ folder, in the index.php file

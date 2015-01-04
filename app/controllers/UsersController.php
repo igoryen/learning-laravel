@@ -23,7 +23,7 @@ class UsersController extends \BaseController {
   }
   
   public function store(){
-    if(! $this->user->isValid($input = Input::all())){
+    if(! $this->user->isValid($input = Input::all())){ // 18
       return Redirect::back()->withInput()->withErrors($this->user->err_messages);
     }
     $validation = Validator::make(Input::all(), User::$val_rules);
