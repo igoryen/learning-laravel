@@ -28,3 +28,7 @@
 17. The constructor for the UseresController. For the UsersController 
   to function properly, we need a User class object
 18. Injecting the User class object through the __constructor of UsersController
+19. Filling the attributes
+20. Rather than accepting the POSTed data, compare it against its stored
+  attributes
+21. compare it against its stored attributes

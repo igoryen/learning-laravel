@@ -23,7 +23,9 @@ class UsersController extends \BaseController {
   }
   
   public function store(){
-    if(! $this->user->isValid($input = Input::all())){ // 18
+    $input = Input::all();
+    //$this->user->fill(Input::all()); // 19
+    if(! $this->user->fill($input)->isValid()){ // 18
       return Redirect::back()->withInput()->withErrors($this->user->err_messages);
     }
     $validation = Validator::make(Input::all(), User::$val_rules);
@@ -31,7 +33,7 @@ class UsersController extends \BaseController {
       return Redirect::back()->withInput()->withErrors($validation->messages());
     }
     
-    $this->user->create($input);
+    $this->user->save();
     
     //return Redirect::to('/users');
     return Redirect::route('users.index');
